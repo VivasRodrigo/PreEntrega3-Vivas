@@ -12,6 +12,10 @@ h2 {
   text-align: center;
 }
 
+.imgofertas {
+  width: 80%;
+}
+
 .flexformat {
   width: 80%;
   margin: 0 auto;
@@ -320,7 +324,19 @@ footer {
 /**Media queris**/
 @media (min-width: 0px) and (max-width: 1070px) {
   .mensaje {
+    width: 100%;
+  }
+  .msj {
     font-size: 12px;
+    animation: movtext 15s linear infinite; /*animación*/
+  }
+  @keyframes movtext {
+    from {
+      transform: translateX(100%); /* Comienza desde la derecha */
+    }
+    to {
+      transform: translateX(-130%); /* Termina en la izquierda */
+    }
   }
   header {
     height: auto;
@@ -383,6 +399,9 @@ footer {
   h2 {
     font-size: 25px;
     padding: 10px;
+  }
+  .imgofertas {
+    width: 100%;
   }
   .marcas {
     width: 105px;

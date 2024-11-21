@@ -3,8 +3,26 @@
 {
     .mensaje
     {
-        font-size: 12px;
+    
+        width: 100%; 
+       
     }
+      
+    .msj
+      {
+        font-size: 12px;
+        animation: movtext 15s linear infinite;  /*animación*/
+      }
+
+      @keyframes movtext {
+        from {
+          transform: translateX(100%);  /* Comienza desde la derecha */
+        }
+        to {
+          transform: translateX(-130%);  /* Termina en la izquierda */
+        }
+      }
+    
 
     header 
     {
@@ -88,6 +106,11 @@
     {
         font-size: 25px;
         padding: 10px;
+    }
+
+    .imgofertas
+    {
+        width: 100%;
     }
 
     .marcas
